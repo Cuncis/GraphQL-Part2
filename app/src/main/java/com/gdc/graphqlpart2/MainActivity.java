@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements CharacterAdapter.
     private CharacterAdapter adapter;
     private FeedResultQuery.Characters data = null;
 
-    private int number = 1;
+    private int number = 0;
 
 
     @Override
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements CharacterAdapter.
             public void onClick(View view) {
                 number++;
                 getData(number);
-                setTitle("Page " + (number-1));
+                setTitle("Page " + number);
             }
         });
 
