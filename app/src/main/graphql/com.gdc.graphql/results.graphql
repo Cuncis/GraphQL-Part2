@@ -1,0 +1,13 @@
+query FeedResult($page: Int) {
+  characters(page: $page) {
+    results {
+	  id
+      name
+      species
+      gender
+      image
+      type
+      status
+    }
+  }
+}

@@ -1,0 +1,15 @@
+query FeedDetail($id: ID) {
+	character (id: $id) {
+		name
+		status
+		species
+		type
+		gender
+		image
+		episode {
+			name
+			episode
+			air_date
+		}
+	}
+}
